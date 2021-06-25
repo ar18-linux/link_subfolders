@@ -4,6 +4,7 @@ set -eu
 
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
+
 function run(){
   # Used to make it work in Git BASH in Windows. Run Git BASH as admin!
   export MSYS=winsymlinks:nativestrict
@@ -17,5 +18,6 @@ function run(){
   done
 
 }
+
 
 run "$@"
